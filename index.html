@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MECHA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">MECHA</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#what">What is MECHA</a>
+                    </li>                    
+                    <li class="page-scroll">
+                        <a href="#installation">Installation</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#use">Use</a>
+                    </li>         
+                    <li class="page-scroll">
+                        <a href="#about">About us</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="https://plantmodelling.shinyapps.io/mecha/" target="_blank"><i class="fa fa-external-link"></i>  Try it online</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/mecha1.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">MECHA</span>
+                        <h2>Model of Explicit Cross-section Hydraulic Architecture</h2>
+                        </br></br>
+                        <hr class="star-light">
+                        </br></br>
+                            <a href="https://github.com/MECHARoot/MECHA/releases/tag/1.0" class="btn btn-lg btn-default" target="_blank">
+                                <i class="fa fa-github"></i>  View source code
+                            </a>
+                            <a href="https://plantmodelling.shinyapps.io/mecha/" class="btn btn-lg btn-primary" target="_blank">
+                                <i class="fa fa-external-link"></i>  Try it online
+                            </a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- About Section -->
+    <section class="success1" id="what">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>What is MECHA?</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <img class="img-responsive" src="img/mecha.png" alt="">
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <p>MECHA is an explicit cross-section model of the root hydraulic anatomy which connects hydraulic concepts across scales. </p>
+
+                    <p>The model computes horizontal water flow at the level of individual cells, quantifies the contribution of water composite pathways, and predicts root radial permeability (kr), using detailed anatomical descriptions and experimental data on the permeability of cell walls (kw), membranes (Lp) and the conductance of individual plasmodesmata (KPD).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="success" id="installation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Installing MECHA</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+
+                    <p>MECHA was coded in Python,  and is therefore platform independant. It can be run on Windows, Linux and MacOS</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1">
+
+                    <h4>1. Download MECHA</h4>
+                    <p>The source code of MECHA is available on github: <a href="https://github.com/MECHARoot/MECHA/releases/tag/1.0">https://github.com/MECHARoot/MECHA</a></p>
+                    <p>The github repo also contain example parameter files needed to run MECHA. You do not need your own data to try it out.</p>
+                        
+
+                    <h4>2. Install Python</h4>
+                    <p>The first step before running MECH is to install a working version for Python. Installation of Python are available here: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+                           
+                </div>
+                <div class="col-lg-5 col-lg-offset-1 ">
+                     <h4>3. Install required libraries</h4>
+                     <p>MECHA is built upon a handfull of external libraries. You will need to install them before using the model.
+                     <ul>
+                        <li><code>numpy</code></li>
+                        <li><code>scipy</code></li>
+                        <li><code>networkx</code></li>
+                        <li><code>lxml</code></li>
+                     </ul>
+                     </p>
+                     <p>These libraries can be install using <a href="https://pypi.python.org/pypi/pip">pip</a>. In the Terminal or Console, enter:</p>
+                     <pre>
+pip install numpy
+pip install scipy
+pip install networkx==1.9.1
+pip install lxml
+pip install matplotlib</pre>
+
+                    <h4>4. Run MECHA</h4>
+                    <p>In the Terminal or Console enter the following lines:</p>
+                    <pre>cd "$PATH_TO_FOLDER_CONTAINING_MECHA"
+python mecha_all.py</pre>
+
+                </div>
+
+
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <hr class="star-light">
+                    <p>Feeling adventurous? Check out the source code.</p>
+                    <a href="https://github.com/MECHARoot/MECHA" class="btn btn-lg btn-primary">
+                        <i class="fa fa-github"></i>  View source code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- About Section -->
+    <section class="success1" id="use">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Using MECHA</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-responsive" src="img/mecha2.png" alt="">
+                </div>
+                <div class="col-lg-6 ">
+                <h4>Input files</h4>
+                    <p>
+                    MECHA uses four parameters files as input, stored in the <code>/in</code> folder in the main MECHA directory:
+                    <ul>
+                        <li><code>General.xml</code> : General simulation parameters</li>
+                        <li><code>BC.xml</code> : Boundary conditions for the simulation. This is where you choose wether the soil is dry, wet, or only partially touch the root.</li>
+                        <li><code>Geometry.xml</code> : Parameters for the root section geometry. This is where you define which root section to use in the simulation.</li>
+                        <li><code>Hydraulics.xml</code> : Hydraulic parameters of the different variables in the simulation</li>
+                    </ul>
+
+                    </p>
+                <h4>Ouput files</h4>
+                    <p>
+                    MECHA output files in a folder defined in the <code>General.xml</code> input file, under the <code>Output</code> tag. Different type of files are generated:
+                    <ul>
+                        <li><code>*.PVTK files</code> : These are geometry files that can be open in <a href="http://www.paraview.org/">Paraview</a></li>
+                        <li><code>Macro_prop_i.txt files</code> : Theses files contain synthetic informations about the simulation results. They contain the radial data.</li>
+                    </ul>
+
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About us</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5">
+                    <img class="img-responsive" src="img/mecha3.png" alt="">
+                </div>
+                <div class="col-lg-6 col-lg-offset-1 ">
+                    <p> 
+                    MECHA was developed at the Université catholique de Louvain, in the Earth and Life Insititute, in the lab of <a href="http://www.uclouvain.be/xavier.draye">Xavier Draye</a>.</br></br> 
+
+                    The primary developpers of the model are <a href="http://www.uclouvain.be/valentin.couvreur">Valentin Couvreur</a> and Marc Faget.</br></br>
+
+                    </p>
+
+                    <p>
+                    MECHA what first used here:
+
+                    <blockquote>
+                        <a href="https://doi.org/10.1104/pp.18.01006"><b>Going with the flow. Multiscale insights into the composite nature of water transport in roots</b></br>
+                        Valentin Couvreur, Marc Faget, Guillaume Lobet, Mathieu Javaux, François Chaumont and Xavier Draye<br>
+                        Plant Physiology, 2018</a> 
+                    </blockquote>
+                    </p>
+
+                    <hr>
+                    MECHA is released under a GPL licence, which means that redistribution and use in source and binary forms, with or without modification, are permitted under the GNU General Public License v3 and provided that the following conditions are met:</br></br>
+
+                    1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</br></br>
+
+                    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</br></br>
+
+                    3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+                    
+                    <hr>
+                    <a type="button" class="btn btn-primary" href="https://github.com/MECHARoot/MECHA/releases/tag/1.0"><i class="fa fa-github" aria-hidden="true"></i> Source code on GitHub</a>  
+                    <a type="button" class="btn btn-default" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> View paper</a> 
+
+                    <hr>
+                    <img src="img/ucl_logo.png" class="img-responsive img-thumbnail" style="height:70px"> 
+                    <img src="img/juelich_logo.jpg" class="img-responsive img-thumbnail" style="height:70px"> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+ 
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+</html>
