@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>MECHA</title>
+    <title>GRANAR</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">MECHA</a>
+                <a class="navbar-brand" href="#page-top">GRANAR</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,8 +51,8 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#what">What is MECHA</a>
-                    </li>                    
+                        <a href="#what">What is GRANAR</a>
+                    </li>
                     <li class="page-scroll">
                         <a href="#installation">Installation</a>
                     </li>
@@ -63,7 +63,7 @@
                         <a href="#about">About us</a>
                     </li>
                     <li class="page-scroll">
-                        <a href="https://plantmodelling.shinyapps.io/mecha/" target="_blank"><i class="fa fa-external-link"></i>  Try it online</a>
+                        <a href="https://plantmodelling.shinyapps.io/granar/" target="_blank"><i class="fa fa-external-link"></i>  Try it online</a>
                     </li>
                 </ul>
             </div>
@@ -76,49 +76,53 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <img class="img-responsive" src="img/mecha1.png" alt="">
-                    <div class="intro-text">
-                        <span class="name">MECHA</span>
-                        <h2>Model of Explicit Cross-section Hydraulic Architecture</h2>
+			<div class="intro-text">
+                        <span class="name">GRANAR</span>
+                        <h2>Generator of Root ANAtomy in R</h2>
                         </br></br>
                         <hr class="star-light">
+						
+			</div>
+			<div class="col-lg-12">
+                    <img class="img-responsive" src="img/granar1.png" alt="">
+                    
+            </div>
+			<div class="row">
                         </br></br>
-                            <a href="https://github.com/MECHARoot/MECHA/releases/tag/1.0" class="btn btn-lg btn-default" target="_blank">
+                            <a href="https://github.com/granar/granar" class="btn btn-lg btn-default" target="_blank">
                                 <i class="fa fa-github"></i>  View source code
                             </a>
-                            <a href="https://plantmodelling.shinyapps.io/mecha/" class="btn btn-lg btn-primary" target="_blank">
+                            <a href="https://plantmodelling.shinyapps.io/granar/" class="btn btn-lg btn-primary" target="_blank">
                                 <i class="fa fa-external-link"></i>  Try it online
                             </a>
-                        
-                        
-                    </div>
-                </div>
+			</div>
             </div>
         </div>
     </header>
-
-
 
     <!-- About Section -->
     <section class="success1" id="what">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>What is MECHA?</h2>
+                    <h2>What is GRANAR?</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-1">
-                    <img class="img-responsive" src="img/mecha.png" alt="">
+                <div class="col-lg-3 col-lg-offset-1">
+					<img class="img-responsive" src="img/granar_CT1.png" alt="">
+					<img class="img-responsive" src="img/granar_CT2.png" alt="">
                 </div>
-                <div class="col-lg-5 col-lg-offset-1">
-                    <p>MECHA is an explicit cross-section model of the root hydraulic anatomy which connects hydraulic concepts across scales. </p>
-
-                    <p>The model computes horizontal water flow at the level of individual cells, quantifies the contribution of water composite pathways, and predicts root radial permeability (kr), using detailed anatomical descriptions and experimental data on the permeability of cell walls (kw), membranes (Lp) and the conductance of individual plasmodesmata (KPD).</p>
+                <div class="col-lg-7 col-lg-offset-1">
+                    <p>GRANAR is a generator of complete root cross-section network in R. </p>
+                    <p>Upon a small set of anatomical features the GRANAR model is able to reconstruct a generic root cell network for mono and dicotyledon. </p>
+					<p>Among the few parameters you can modify, there is the aerenchyma proportion, the number and size of the xylem vessels, but also the number of cell layers and the mean size of each cell type.</p>
                 </div>
-            </div>
+				<div class="col-lg-4 col-lg-offset-1">
+					<img class="img-responsive" src="img/granar_CT3.png" alt="">
+				</div>
+			</div>
         </div>
     </section>
 
@@ -128,56 +132,59 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Installing MECHA</h2>
+                    <h2>Installing GRANAR</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
 
-                    <p>MECHA was coded in Python,  and is therefore platform independant. It can be run on Windows, Linux and MacOS</p>
+                    <p>GRANAR is a R package</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-1">
 
-                    <h4>1. Download MECHA</h4>
-                    <p>The source code of MECHA is available on github: <a href="https://github.com/MECHARoot/MECHA/releases/tag/1.0">https://github.com/MECHARoot/MECHA</a></p>
-                    <p>The github repo also contain example parameter files needed to run MECHA. You do not need your own data to try it out.</p>
+                    <h4>1. Download GRANAR</h4>
+                    <p>The source code of GRANAR is available on github: <a href="https://github.com/granar/granar">https://github.com/granar/granar</a></p>
+                    <p>The github repo also contain example parameter files needed to run GRANAR. You do not need your own data to try it out.</p>
                         
 
-                    <h4>2. Install Python</h4>
-                    <p>The first step before running MECH is to install a working version for Python. Installation of Python are available here: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+                    <h4>2. Install R</h4>
+                    <p>The first step before running GRANAR is to install a working version for R! Installation of R are available here: <a href="https://cran.r-project.org/">https://cran.r-project.org/</a></p>
                            
                 </div>
                 <div class="col-lg-5 col-lg-offset-1 ">
                      <h4>3. Install required libraries</h4>
-                     <p>MECHA is built upon a handfull of external libraries. You will need to install them before using the model.
-                     <ul>
-                        <li><code>numpy</code></li>
-                        <li><code>scipy</code></li>
-                        <li><code>networkx</code></li>
-                        <li><code>lxml</code></li>
-                     </ul>
+                     <p>GRANAR is built upon a handfull of external libraries. You will need to install them before using the model.
                      </p>
-                     <p>These libraries can be install using <a href="https://pypi.python.org/pypi/pip">pip</a>. In the Terminal or Console, enter:</p>
+                     <p>These libraries can be install using <a href="https://www.rstudio.com/">RStudio</a>. In the Terminal or Console, enter:</p>
                      <pre>
-pip install numpy
-pip install scipy
-pip install networkx==1.9.1
-pip install lxml
-pip install matplotlib</pre>
+library(xml2)
+library(tidyverse)
+library(plyr)
+library(deldir)
+library(alphahull)
+library(viridis)
+library(cowplot)
+library(retistruct)
+library(Hmisc)
+library(sp)
+					 </pre>
 
-                    <h4>4. Run MECHA</h4>
+                    <h4>4. Run GRANAR</h4>
                     <p>In the Terminal or Console enter the following lines:</p>
-                    <pre>cd "$PATH_TO_FOLDER_CONTAINING_MECHA"
-python mecha_all.py</pre>
-
+                    <pre>
+install.packages("devtools")
+library(devtools)
+install_github("granar/granar")
+library(granar)
+					</pre>
                 </div>
 
 
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <hr class="star-light">
                     <p>Feeling adventurous? Check out the source code.</p>
-                    <a href="https://github.com/MECHARoot/MECHA" class="btn btn-lg btn-primary">
+                    <a href="https://github.com/granar/granar" class="btn btn-lg btn-primary">
                         <i class="fa fa-github"></i>  View source code
                     </a>
                 </div>
@@ -190,37 +197,37 @@ python mecha_all.py</pre>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Using MECHA</h2>
+                    <h2>Using GRANAR</h2>
                     <hr class="star-primary">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-responsive" src="img/mecha2.png" alt="">
+                    <img class="img-responsive" src="img/granar_CT.png" alt="">
                 </div>
                 <div class="col-lg-6 ">
                 <h4>Input files</h4>
                     <p>
-                    MECHA uses four parameters files as input, stored in the <code>/in</code> folder in the main MECHA directory:
+                    GRANAR uses only parameters files as input. Examples of the input files are stored in the <code>modelparameter</code> folder in the granar_example directory:
                     <ul>
-                        <li><code>General.xml</code> : General simulation parameters</li>
-                        <li><code>BC.xml</code> : Boundary conditions for the simulation. This is where you choose wether the soil is dry, wet, or only partially touch the root.</li>
-                        <li><code>Geometry.xml</code> : Parameters for the root section geometry. This is where you define which root section to use in the simulation.</li>
-                        <li><code>Hydraulics.xml</code> : Hydraulic parameters of the different variables in the simulation</li>
+                        <li><code>params.xml</code> : General parameters</li>
                     </ul>
 
                     </p>
-                <h4>Ouput files</h4>
+                <h4>Ouput</h4>
                     <p>
-                    MECHA output files in a folder defined in the <code>General.xml</code> input file, under the <code>Output</code> tag. Different type of files are generated:
-                    <ul>
-                        <li><code>*.PVTK files</code> : These are geometry files that can be open in <a href="http://www.paraview.org/">Paraview</a></li>
-                        <li><code>Macro_prop_i.txt files</code> : Theses files contain synthetic informations about the simulation results. They contain the radial data.</li>
-                    </ul>
-
+                    GRANAR output are stored in a list element and it can be exported under .xml with the same format as <a href = "https://www.nottingham.ac.uk/research/groups/cvl/software/cellset.aspx" style="color:#f48042">CellSet</a>.
                     </p>
-
-
+					<pre>
+<font color = "red"> # R script example </font>
+ 
+library(granar)
+params = read_param_xml(path = "params.xml")
+sim = list() <font color = "red"># create an empty list </font>
+sim = cerate_anatomy(parameters = params) <font color = "red"># generate a cell network anatomy</font>
+write_anatomy_xml(sim = sim,
+                  path = "new_root.xml") <font color = "red"># export the data under a .xml file</font>
+					</pre>
                 </div>
             </div>
         </div>
@@ -240,42 +247,39 @@ python mecha_all.py</pre>
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-responsive" src="img/mecha3.png" alt="">
+                    <img class="img-responsive" src="img/granar_CT3.png" alt="">
                 </div>
                 <div class="col-lg-6 col-lg-offset-1 ">
                     <p> 
-                    MECHA was developed at the Université catholique de Louvain, in the Earth and Life Insititute, in the lab of <a href="http://www.uclouvain.be/xavier.draye">Xavier Draye</a>.</br></br> 
+                    GRANAR was developed at the Université catholique de Louvain, in the Earth and Life Insititute, in the lab of <a href="http://www.guillaumelobet.be/">Guillaume Lobet</a>.</br></br> 
 
-                    The primary developpers of the model are <a href="http://www.uclouvain.be/valentin.couvreur">Valentin Couvreur</a> and Marc Faget.</br></br>
-
+                    The primary developpers of the model are <a href="http://www.uclouvain.be/adrien.heymans">Adrien Heymans</a> and Guillaume Lobet.</br></br>
                     </p>
 
                     <p>
-                    MECHA what first used here:
+                    GRANAR is still under development for the moment:
 
                     <blockquote>
-                        <a href="https://doi.org/10.1104/pp.18.01006"><b>Going with the flow. Multiscale insights into the composite nature of water transport in roots</b></br>
-                        Valentin Couvreur, Marc Faget, Guillaume Lobet, Mathieu Javaux, François Chaumont and Xavier Draye<br>
-                        Plant Physiology, 2018</a> 
+                        <a href="https:granar"><b>Title</b></br>
+                        Adrien Heymans, Valentin Couvreur, Therese LaRue, Ana Paez, Guillaume Lobet<br>
+                        Where, 2019</a> 
                     </blockquote>
                     </p>
 
                     <hr>
-                    MECHA is released under a GPL licence, which means that redistribution and use in source and binary forms, with or without modification, are permitted under the GNU General Public License v3 and provided that the following conditions are met:</br></br>
+                    GRANAR is released under a GNU General Public Licence v3.0, which means that distribution and use and binary forms, with or without modification, are permitted under the GNU General Public License v3 and provided that the following conditions are met:</br></br>
 
                     1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</br></br>
 
                     2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</br></br>
 
                     3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
-
-                    
                     <hr>
-                    <a type="button" class="btn btn-primary" href="https://github.com/MECHARoot/MECHA/releases/tag/1.0"><i class="fa fa-github" aria-hidden="true"></i> Source code on GitHub</a>  
+                    <a type="button" class="btn btn-primary" href="https://github.com/granar/granar"><i class="fa fa-github" aria-hidden="true"></i> Source code on GitHub</a>  
                     <a type="button" class="btn btn-default" href="#"><i class="fa fa-external-link" aria-hidden="true"></i> View paper</a> 
 
                     <hr>
-                    <img src="img/ucl_logo.png" class="img-responsive img-thumbnail" style="height:70px"> 
+                    <img src="img/UCLouvain.jpg" class="img-responsive img-thumbnail" style="height:70px"> 
                     <img src="img/juelich_logo.jpg" class="img-responsive img-thumbnail" style="height:70px"> 
                 </div>
             </div>
