@@ -201,7 +201,7 @@ library(granar)
                 <div class="col-lg-6 ">
                 <h4>Input files</h4>
                     <p>
-                    GRANAR uses only parameters files as input. Examples of the input files are stored in the <code>modelparameter</code> folder in the granar_example directory:
+                    GRANAR uses only parameters files as input. Examples of the input files are stored in the <a href = "https://github.com/granar/granar_examples/tree/master/modelparam" style="color:#f48042"><code>modelparameter</code></a>folder in the granar_example directory:
                     <ul>
                         <li><code>params.xml</code> : General parameters</li>
                     </ul>
@@ -215,9 +215,9 @@ library(granar)
 <font color = "red"> # R script example </font>
  
 library(granar)
-params = read_param_xml(path = "params.xml")
+params = read_param_xml(path = "params.xml") <font color = "red"># import input parameter for GRANAR </font>
 sim = list() <font color = "red"># create an empty list </font>
-sim = cerate_anatomy(parameters = params) <font color = "red"># generate a cell network anatomy</font>
+sim = create_anatomy(parameters = params) <font color = "red"># generate a cell network anatomy</font>
 write_anatomy_xml(sim = sim,
                   path = "new_root.xml") <font color = "red"># export the data under a .xml file</font>
 					</pre>
@@ -240,7 +240,7 @@ write_anatomy_xml(sim = sim,
             </div>
             <div class="row">
                 <div class="col-lg-5">
-                    <img class="img-responsive" src="img/granar_CT3.png" alt="">
+                    <img class="img-responsive" src="img/Arabido.jpg" alt="">
                 </div>
                 <div class="col-lg-6 col-lg-offset-1 ">
                     <p> 
